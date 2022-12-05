@@ -15,3 +15,4 @@ cargo run --bin part_two
 - Day 02: Rock Paper Scissors [[One](https://github.com/ZAZPRO/adventofcode-2022/blob/main/02/rust/src/bin/part_one.rs), [Two](https://github.com/ZAZPRO/adventofcode-2022/blob/main/02/rust/src/bin/part_two.rs)]
 - Day 03: Rucksack Reorganization [[One](https://github.com/ZAZPRO/adventofcode-2022/blob/main/03/rust/src/bin/part_one.rs), [Two](https://github.com/ZAZPRO/adventofcode-2022/blob/main/03/rust/src/bin/part_two.rs)]
 - Day 04: Camp Cleanup [[One](https://github.com/ZAZPRO/adventofcode-2022/blob/main/04/rust/src/bin/part_one.rs), [Two](https://github.com/ZAZPRO/adventofcode-2022/blob/main/04/rust/src/bin/part_two.rs)]
+- Day 05: Supply Stacks [[One](https://github.com/ZAZPRO/adventofcode-2022/blob/main/05/rust/src/bin/part_one.rs), [Two](https://github.com/ZAZPRO/adventofcode-2022/blob/main/05/rust/src/bin/part_two.rs)]
