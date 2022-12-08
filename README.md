@@ -17,3 +17,4 @@ cargo run --bin part_two
 - Day 04: Camp Cleanup [[One](https://github.com/ZAZPRO/adventofcode-2022/blob/main/04/rust/src/bin/part_one.rs), [Two](https://github.com/ZAZPRO/adventofcode-2022/blob/main/04/rust/src/bin/part_two.rs)]
 - Day 05: Supply Stacks [[One](https://github.com/ZAZPRO/adventofcode-2022/blob/main/05/rust/src/bin/part_one.rs), [Two](https://github.com/ZAZPRO/adventofcode-2022/blob/main/05/rust/src/bin/part_two.rs)]
 - Day 06: Tuning Trouble [[One](https://github.com/ZAZPRO/adventofcode-2022/blob/main/06/rust/src/bin/part_one.rs), [Two](https://github.com/ZAZPRO/adventofcode-2022/blob/main/06/rust/src/bin/part_two.rs)]
+- Day 07: No Space Left On Device [[One](https://github.com/ZAZPRO/adventofcode-2022/blob/main/07/rust/src/bin/part_one.rs), [Two](https://github.com/ZAZPRO/adventofcode-2022/blob/main/07/rust/src/bin/part_two.rs)]
