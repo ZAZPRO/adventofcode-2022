@@ -19,3 +19,4 @@ cargo run --bin part_two
 - Day 06: Tuning Trouble [[One](https://github.com/ZAZPRO/adventofcode-2022/blob/main/06/rust/src/bin/part_one.rs), [Two](https://github.com/ZAZPRO/adventofcode-2022/blob/main/06/rust/src/bin/part_two.rs)]
 - Day 07: No Space Left On Device [[One](https://github.com/ZAZPRO/adventofcode-2022/blob/main/07/rust/src/bin/part_one.rs), [Two](https://github.com/ZAZPRO/adventofcode-2022/blob/main/07/rust/src/bin/part_two.rs)]
 - Day 08: Treetop Tree House [[One](https://github.com/ZAZPRO/adventofcode-2022/blob/main/08/rust/src/bin/part_one.rs), [Two](https://github.com/ZAZPRO/adventofcode-2022/blob/main/08/rust/src/bin/part_two.rs)]
+- Day 09: Rope Bridge [[One](https://github.com/ZAZPRO/adventofcode-2022/blob/main/09/rust/src/bin/part_one.rs), [Two](https://github.com/ZAZPRO/adventofcode-2022/blob/main/09/rust/src/bin/part_two.rs)]
