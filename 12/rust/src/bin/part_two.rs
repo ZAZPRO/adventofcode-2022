@@ -268,36 +268,28 @@ fn main() -> Result<(), Box<dyn Error>> {
     // In my puzzle input I can filter those to first few rows of the map.
     // That's because any other zero height point is isolated in my case.
     // As I am not sure if it's true for other puzzles and alghoritm is fast enough.
-    // I will just check every starting point. (Takes around 3 minutes on the laptop).
+    // I will just check every starting point. (Takes still one pass with dijkstra).
     let starting_points: Vec<&HeightPoint> = height_map.iter().filter(|n| n.height == 0).collect();
 
-    // List to store all calculated heuristics.
-    let mut shortest_paths: Vec<u32> = Vec::new();
+    // Copy this graph to use it in finding path to the end point.
+    let mut graph = initial_graph.clone();
 
     // For each starting point.
-    for (i, starting_point) in starting_points.clone().iter().enumerate() {
-        // Print progress.
-        println!("Processing {}/{}", i + 1, starting_points.len());
-
-        // Create new graph with new starting point.
-        let mut graph = initial_graph.clone();
+    for starting_point in starting_points.iter() {
+        // Set each starting point in the graph.
         set_starting_point(&mut graph, starting_point.id);
-
-        // Calculate shortest path to end the point.
-        dijkstra(&mut graph, end_point.unwrap().id);
-
-        let end_node = graph.get(&end_point.unwrap().id).unwrap();
-        // As all paths that are possible to take are 1.
-        // And heuristics is a sum of all points on the path before.
-        // Final result is the heuristics result.
-        shortest_paths.push(end_node.heuristic);
     }
 
-    // Find smallest value from the List.
-    let shortest_path = shortest_paths.iter().min().unwrap();
+    // Calculate shortest path to end the point.
+    dijkstra(&mut graph, end_point.unwrap().id);
 
-    // Shortest path is our result.
-    println!("Result: {}", shortest_path);
+    // Get end node out of the processed tree.
+    let end_node = graph.get(&end_point.unwrap().id).unwrap();
+
+    // As all paths that are possible to take are 1.
+    // And Heuristics is a sum of all points on the path before.
+    // Final result is the heuristics result.
+    println!("Result: {}", end_node.heuristic);
 
     Ok(())
 }
